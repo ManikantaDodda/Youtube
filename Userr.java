@@ -1,4 +1,4 @@
-package com.spacey.insta.user;
+package org.codejudge.sb.controller;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.spacey.insta.user.post.Post;
+
 
 @Entity
 @JsonInclude(Include.NON_NULL)
