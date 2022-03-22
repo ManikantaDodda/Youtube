@@ -1,4 +1,4 @@
-package com.spacey.insta.user.post;
+package org.codejudge.sb.controller;
 
 import java.util.List;
 
@@ -6,8 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.spacey.insta.exception.UserNotFoundException;
-import com.spacey.insta.response.StatusResponse;
-import com.spacey.insta.user.UserRepository;
+
 
 @Service
 public class PostService {
