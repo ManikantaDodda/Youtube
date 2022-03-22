@@ -1,11 +1,9 @@
-package com.spacey.insta.user;
+package org.codejudge.sb.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
-import com.spacey.insta.exception.UserNotFoundException;
-import com.spacey.insta.response.StatusResponse;
 
 @Service
 public class UserService {
@@ -47,14 +45,7 @@ public class UserService {
 	}
 
 	public StatusResponse updateUser(Userr user, String username) {
-		// TIPS: to make a bulky changes:
-		// repository.findById(id).map( entity -> { //do something return
-		// repository.save(entity) } ).orElseGet( () -> { //do something return; })
-		// .......END.......//
-		// can't do the below commented one due to the fact:
-		// https://stackoverflow.com/questions/21018728/jpa-hibernate-changing-the-primary-key-of-an-persisted-object
-		// userRepository.updateUsername(user.username, username);
-		// so, better delete the old one and then create another as follows:
+		
 		Userr existing = userRepository.findOne(username);
 		if (existing != null) deleteUser(username);
 		existing.setUsername(user.username);
