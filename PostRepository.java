@@ -1,4 +1,4 @@
-package com.spacey.insta.user.post;
+package org.codejudge.sb.controller;
 
 import java.util.List;
 
