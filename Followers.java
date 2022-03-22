@@ -1,4 +1,4 @@
-package com.spacey.insta.user;
+package org.codejudge.sb.controller;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
